@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>computer</title>
+  <style>
+    :root{
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #0b1220;
+      --text: #e5e7eb;
+      --muted: #93c5fd;
+      --brand: #60a5fa;
+      --accent: #22d3ee;
+      --border: #1f2937;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius-xl: 18px;
+      --radius-md: 12px;
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      background: linear-gradient(180deg, #0a0f1e 0%, #0f172a 60%, #0a0f1e 100%);
+      color: var(--text);
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(8px);
+      background: rgba(2,6,23,.85);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-wrap {
+      max-width: var(--maxw); margin: 0 auto;
+      padding: 14px 20px; display: flex; align-items: center; gap: 16px;
+    }
+    .badge {
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      color: #001018; font-weight: 800;
+      padding: 6px 12px; border-radius: 999px; font-size: 12px;
+    }
+    h1 { margin: 0; font-size: 20px; font-weight: 800; }
+    main { max-width: var(--maxw); margin: 28px auto; padding: 0 20px 40px; }
+    .card {
+      margin-top: 24px; background: var(--card);
+      border: 1px solid var(--border); border-radius: var(--radius-xl);
+      box-shadow: var(--shadow); overflow: hidden;
+    }
+    .card-head {
+      display: flex; align-items: center; gap: 12px;
+      padding: 16px 18px; border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(96,165,250,.12), rgba(34,211,238,.06));
+    }
+    .card-icon {
+      width: 36px; height: 36px; display: grid; place-items: center;
+      border-radius: 10px; background: rgba(96,165,250,.3);
+      font-weight: bold;
+    }
+    .card-title { font-size: 18px; font-weight: 800; margin: 0; }
+    .card-body { padding: 18px; }
+    ul { margin: 0; padding-left: 20px; }
+    .table-wrap {
+      overflow-x: auto; border: 1px solid var(--border);
+      border-radius: var(--radius-md); background: #0a101d;
+    }
+    table { width: 100%; border-collapse: collapse; min-width: 640px; }
+    th, td {
+      padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border);
+    }
+    thead th {
+      background: rgba(34,211,238,.16);
+      color: #e2f1ff; font-weight: 800;
+    }
+    tbody tr:hover td { background: rgba(96,165,250,.05); }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-wrap">
+    <span class="badge">Lecture 2</span>
+    <h1>What is Computer and its Applications</h1>
+  </div>
+</header>
+<main>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">1</div>
+    <h3 class="card-title">What is Computer?</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>Derived from the word <em>compute</em>, which means <em>to calculate</em>.</li>
+      <li>A computer is an electronic machine that:
+        <ul>
+          <li>Accepts data from the user,</li>
+          <li>Processes data by performing calculations and operations,</li>
+          <li>Generates the desired output results.</li>
+        </ul>
+      </li>
+      <li>Performs simple and complex operations with speed and accuracy.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">2</div>
+    <h3 class="card-title">Data & Information</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li><strong>Data:</strong> Raw, unorganized facts with no meaning.</li>
+      <li><strong>Information:</strong> Processed data that has meaning.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">3</div>
+    <h3 class="card-title">Input-Process-Output Concept</h3>
+  </div>
+  <div class="card-body">
+    <p>Computer accepts input → Processes data → Generates output → Stores data. This is called the <em>input-process-output</em> concept.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">4</div>
+    <h3 class="card-title">Input</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>Data accepted via input devices like keyboard.</li>
+      <li>Data types: text, sound, images, documents.</li>
+      <li>Processing actions: arithmetic/logic calculations, editing, modifying documents.</li>
+      <li>Stored temporarily in main memory during processing.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">5</div>
+    <h3 class="card-title">Storage</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>Permanent storage in secondary devices (disk, tape).</li>
+      <li>Stored data can be retrieved later.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">6</div>
+    <h3 class="card-title">Output</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>Result after processing.</li>
+      <li>Forms: text, sound, image, document.</li>
+      <li>Output methods: monitor display, printer, sound playback.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">7</div>
+    <h3 class="card-title">Characteristics of Computer</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li><strong>Speed:</strong> Faster than humans in computation.</li>
+      <li><strong>Accuracy:</strong> Programmed for error-free results.</li>
+      <li><strong>Storage:</strong> Large data storage.</li>
+      <li><strong>Diligence:</strong> Works long hours without error.</li>
+      <li><strong>Versatility:</strong> Can perform different tasks.</li>
+      <li><strong>No IQ:</strong> Needs instructions to work.</li>
+      <li><strong>No Feeling:</strong> Lacks emotions, experience, or knowledge.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">8</div>
+    <h3 class="card-title">Uses of Computer</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>Integral to life: at home, office, movies, hotels, driving.</li>
+      <li>Manages storage, flow, processing of data.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">9</div>
+    <h3 class="card-title">Applications of Computer</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li><strong>Education:</strong> Notes, presentations, e-learning, online exams.</li>
+      <li><strong>Government:</strong> E-governance, online services, crime databases.</li>
+      <li><strong>Sports:</strong> Score tracking, game development, training analysis.</li>
+      <li><strong>Advertising:</strong> Digital ads, email marketing, web ads, visual & sound effects.</li>
+      <li><strong>Medicine:</strong> Research data, medical history, diagnostic equipment (ultrasound, MRI).</li>
+      <li><strong>Science & Engineering:</strong> Scientific calculations, CAD/CAM, space research.</li>
+      <li><strong>Home:</strong> Games, accounts, communication, bill payments, embedded microprocessors.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">10</div>
+    <h3 class="card-title">Data vs Information Comparison</h3>
+  </div>
+  <div class="card-body">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Basis</th>
+            <th>Data</th>
+            <th>Information</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Meaning</td>
+            <td>Raw facts about someone or something</td>
+            <td>Refined facts concerning a specific subject</td>
+          </tr>
+          <tr>
+            <td>Form</td>
+            <td>Text and numbers</td>
+            <td>Organized</td>
+          </tr>
+          <tr>
+            <td>Useful</td>
+            <td>May or may not be useful</td>
+            <td>Always useful</td>
+          </tr>
+          <tr>
+            <td>Dependency</td>
+            <td>Does not depend on information</td>
+            <td>Cannot exist without data</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</main>
+  <style>
+    :root{
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #0b1220;
+      --text: #e5e7eb;
+      --muted: #93c5fd;
+      --brand: #60a5fa;
+      --accent: #22d3ee;
+      --border: #1f2937;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius-xl: 18px;
+      --radius-md: 12px;
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      background: linear-gradient(180deg, #0a0f1e 0%, #0f172a 60%, #0a0f1e 100%);
+      color: var(--text);
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(8px);
+      background: rgba(2,6,23,.85);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-wrap {
+      max-width: var(--maxw); margin: 0 auto;
+      padding: 14px 20px; display: flex; align-items: center; gap: 16px;
+    }
+    .badge {
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      color: #001018; font-weight: 800;
+      padding: 6px 12px; border-radius: 999px; font-size: 12px;
+    }
+    h1 { margin: 0; font-size: 20px; font-weight: 800; }
+    main { max-width: var(--maxw); margin: 28px auto; padding: 0 20px 40px; }
+    .card {
+      margin-top: 24px; background: var(--card);
+      border: 1px solid var(--border); border-radius: var(--radius-xl);
+      box-shadow: var(--shadow); overflow: hidden;
+    }
+    .card-head {
+      display: flex; align-items: center; gap: 12px;
+      padding: 16px 18px; border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(96,165,250,.12), rgba(34,211,238,.06));
+    }
+    .card-icon {
+      width: 36px; height: 36px; display: grid; place-items: center;
+      border-radius: 10px; background: rgba(96,165,250,.3);
+      font-weight: bold;
+    }
+    .card-title { font-size: 18px; font-weight: 800; margin: 0; }
+    .card-body { padding: 18px; }
+    ul { margin: 0; padding-left: 20px; }
+    .table-wrap {
+      overflow-x: auto; border: 1px solid var(--border);
+      border-radius: var(--radius-md); background: #0a101d;
+    }
+    table { width: 100%; border-collapse: collapse; min-width: 640px; }
+    th, td {
+      padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border);
+    }
+    thead th {
+      background: rgba(34,211,238,.16);
+      color: #e2f1ff; font-weight: 800;
+    }
+    tbody tr:hover td { background: rgba(96,165,250,.05); }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-wrap">
+    <span class="badge">Lecture 3</span>
+    <h1>The Computer Generations</h1>
+  </div>
+</header>
+<main>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">1</div>
+    <h3 class="card-title">Overview</h3>
+  </div>
+  <div class="card-body">
+    <p>“Generations” distinguish technological steps in computer evolution, now including hardware and software.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">2</div>
+    <h3 class="card-title">First Generation (1946–1959): Vacuum Tubes</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>Used vacuum tubes for circuitry and magnetic drums for memory.</li>
+      <li>Input: Punched cards and paper tapes; Output: Printouts.</li>
+      <li>Instructions in machine language (binary).</li>
+      <li>Solved one problem at a time.</li>
+      <li>Large size, required large room.</li>
+      <li><strong>Examples:</strong> UNIVAC, ENIAC, EDVAC</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">3</div>
+    <h3 class="card-title">Second Generation (1959–1965): Transistors</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>Transistors replaced vacuum tubes → smaller, faster, cheaper, energy efficient.</li>
+      <li>Magnetic tapes/disks for storage.</li>
+      <li>Input: Punched cards; Output: Printouts.</li>
+      <li>Used assembly language (mnemonics like ADD, SUB).</li>
+      <li>High-level languages introduced: FORTRAN, COBOL, ALGOL, SNOBOL.</li>
+      <li><strong>Examples:</strong> PDP-8, IBM 1401, CDC 1604.</li>
+      <li>Used for business applications: payroll, inventory control, etc.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">4</div>
+    <h3 class="card-title">Third Generation (1965–1971): Integrated Circuits (IC)</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>IC chips combined multiple components on a silicon chip.</li>
+      <li>Small Scale Integration (SSI) → Medium Scale Integration (MSI).</li>
+      <li>Interaction via keyboard and monitor (no more punched cards).</li>
+      <li>High-level languages extended: PL/1, PASCAL, BASIC.</li>
+      <li><strong>Examples:</strong> IBM 370, PDP 11.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">5</div>
+    <h3 class="card-title">Fourth Generation (1971–1980): Microprocessors</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>Large Scale Integration (LSI) & Very Large Scale Integration (VLSI).</li>
+      <li>Microprocessor: Single chip performing arithmetic, logic, control.</li>
+      <li>Led to Personal Computer (PC) revolution.</li>
+      <li>Semiconductor memories replaced magnetic cores.</li>
+      <li>Networking and the rise of the Internet.</li>
+      <li>Operating Systems: MS-DOS, MS-Windows, UNIX.</li>
+      <li>GUI introduced for user-friendly interaction.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">6</div>
+    <h3 class="card-title">Fifth Generation (1980 Onwards): Artificial Intelligence</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>Goal: Computers capable of learning and self-organization.</li>
+      <li>Ultra Large Scale Integration (ULSI): Millions of components on a chip.</li>
+      <li>Parallel processing: Multiple instructions at once → faster speed.</li>
+      <li>Based on Artificial Intelligence (AI), simulating human thinking and reasoning.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">7</div>
+    <h3 class="card-title">Generation Summary</h3>
+  </div>
+  <div class="card-body">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Generation</th>
+            <th>Period</th>
+            <th>Technology Used</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First</td>
+            <td>1946–1959</td>
+            <td>Vacuum Tubes</td>
+          </tr>
+          <tr>
+            <td>Second</td>
+            <td>1959–1965</td>
+            <td>Transistors</td>
+          </tr>
+          <tr>
+            <td>Third</td>
+            <td>1965–1971</td>
+            <td>Integrated Circuits (IC)</td>
+          </tr>
+          <tr>
+            <td>Fourth</td>
+            <td>1971–1980</td>
+            <td>Microprocessors (LSI, VLSI)</td>
+          </tr>
+          <tr>
+            <td>Fifth</td>
+            <td>1980–Present</td>
+            <td>ULSI, AI-based</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:10px; color:#cbd5e1;">This table provides a quick revision of all computer generations.</p>
+  </div>
+</div>
+
+</main>
+
+  <style>
+    :root{
+      --bg: #0f172a;          /* slate-900 */
+      --panel: #111827;       /* gray-900 */
+      --card: #0b1220;        /* deep panel */
+      --text: #e5e7eb;        /* gray-200 */
+      --muted: #93c5fd;       /* sky-300 */
+      --brand: #60a5fa;       /* blue-400 */
+      --accent: #22d3ee;      /* cyan-400 */
+      --border: #1f2937;      /* gray-800 */
+      --green: #34d399;       /* emerald-400 */
+      --yellow: #fbbf24;      /* amber-400 */
+      --red: #f87171;         /* red-400 */
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius-xl: 18px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
+      --maxw: 1100px;
+    }
+
+    /* Base */
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; background: linear-gradient(180deg, #0a0f1e 0%, #0f172a 60%, #0a0f1e 100%);
+      color: var(--text); font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(8px);
+      background: linear-gradient(180deg, rgba(2,6,23,.85) 0%, rgba(2,6,23,.35) 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-wrap {
+      max-width: var(--maxw); margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; gap: 16px;
+    }
+    .badge {
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      color: #001018; font-weight: 800; letter-spacing: .5px;
+      padding: 6px 12px; border-radius: 999px; font-size: 12px; box-shadow: var(--shadow);
+    }
+    h1.title {
+      margin: 0; font-size: 20px; font-weight: 800; letter-spacing: .3px;
+    }
+    .subtitle { color: #cbd5e1; font-size: 13px; opacity: .9; }
+
+    /* Main layout */
+    main { max-width: var(--maxw); margin: 28px auto; padding: 0 20px 40px; }
+
+    .intro {
+      background: radial-gradient(1200px 600px at 10% -30%, rgba(96,165,250,.15), transparent 60%),
+                  radial-gradient(900px 500px at 100% 0%, rgba(34,211,238,.12), transparent 60%),
+                  var(--panel);
+      border: 1px solid var(--border);
+      padding: 22px; border-radius: var(--radius-xl); box-shadow: var(--shadow);
+    }
+    .intro h2 { margin: 0 0 8px; font-size: 22px; letter-spacing: .3px; }
+    .intro p { margin: 0; color: #d1d5db; }
+
+    /* Card sections */
+    section.card {
+      margin-top: 24px; background: linear-gradient(180deg, #0b1220 0%, #0d1426 100%);
+      border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .card-head {
+      display: flex; align-items: center; gap: 12px;
+      padding: 16px 18px; border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(96,165,250,.12), rgba(34,211,238,.06));
+    }
+    .card-icon {
+      width: 36px; height: 36px; display: grid; place-items: center;
+      border-radius: 10px; background: linear-gradient(135deg, rgba(96,165,250,.3), rgba(34,211,238,.25));
+      color: #061a1f; font-weight: 900;
+    }
+    .card-title { font-size: 18px; font-weight: 800; margin: 0; letter-spacing: .2px; }
+    .card-body { padding: 18px; }
+
+    /* Lists */
+    ul.clean, ol.clean { margin: 10px 0 0 0; padding-left: 18px; }
+    ul.clean li, ol.clean li { margin: 8px 0; }
+    .pill {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: rgba(96,165,250,.18); color: #cfe8ff; font-size: 12px; border: 1px solid rgba(96,165,250,.25);
+    }
+
+    /* Grid for sub-cards */
+    .grid {
+      display: grid; gap: 14px;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+    .col-6 { grid-column: span 6; }
+    .col-4 { grid-column: span 4; }
+    .col-12 { grid-column: span 12; }
+
+    .subcard {
+      background: linear-gradient(180deg, rgba(17,24,39,.6), rgba(2,6,23,.6));
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md); padding: 14px;
+    }
+    .subcard h4 { margin: 0 0 6px; font-size: 16px; font-weight: 800; color: var(--muted); }
+    .tagline { color: #cbd5e1; font-size: 14px; margin: 0 0 10px; }
+
+    /* Table */
+    .table-wrap {
+      overflow-x: auto; border: 1px solid var(--border);
+      border-radius: var(--radius-md); background: #0a101d;
+    }
+    table {
+      width: 100%; border-collapse: collapse; min-width: 640px;
+    }
+    th, td {
+      padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border);
+    }
+    thead th {
+      background: linear-gradient(180deg, rgba(34,211,238,.16), rgba(96,165,250,.08));
+      color: #e2f1ff; font-weight: 800; letter-spacing: .3px;
+      position: sticky; top: 0; z-index: 1;
+    }
+    tbody tr:hover td { background: rgba(96,165,250,.05); }
+
+    /* TOC */
+    nav.toc {
+      margin-top: 16px; border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(15,23,42,.9), rgba(2,6,23,.9));
+      border-radius: var(--radius-md); padding: 12px 14px;
+    }
+    nav.toc h3 { margin: 0 0 8px; font-size: 15px; color: #dbeafe; letter-spacing: .2px; }
+    nav.toc ul { margin: 0; padding-left: 16px; }
+    nav.toc li { margin: 6px 0; }
+
+    /* Footer */
+    footer {
+      max-width: var(--maxw); margin: 26px auto 40px; padding: 0 20px;
+      color: #a5b4fc; font-size: 13px; opacity: .9;
+    }
+
+    /* Utilities */
+    .note { color: #cbd5e1; }
+    .ok { color: var(--green); font-weight: 700; }
+    .warn { color: var(--yellow); font-weight: 700; }
+    .danger { color: var(--red); font-weight: 700; }
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .col-6 { grid-column: span 12; }
+      .col-4 { grid-column: span 12; }
+      .card-head { flex-wrap: wrap; }
+    }
+
+    /* Print */
+    @media print {
+      header { position: static; background: transparent; border: none; }
+      .intro, section.card { break-inside: avoid; page-break-inside: avoid; }
+      a { text-decoration: none; color: inherit; }
+      body { background: #fff; color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header>
+    <div class="header-wrap">
+      <span class="badge">Lecture 4</span>
+      <h1 class="title">Classification of Computers</h1>
+      <div class="subtitle">Purpose • Technology • Size & Capacity • Comparison</div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Intro -->
+    <div class="intro">
+      <h2>Overview</h2>
+      <p>This lecture organizes computers by purpose, technology used, and size/capacity—ending with a clean comparison table for quick revision.</p>
+
+      <nav class="toc" aria-label="Table of contents">
+        <h3>Contents</h3>
+        <ul>
+          <li><a href="#classification">1. Classification of computers</a></li>
+          <li><a href="#purpose">2. According to purpose</a></li>
+          <li><a href="#technology">3. According to technology used</a></li>
+          <li><a href="#size-capacity">4. According to size and capacity</a></li>
+          <li><a href="#comparison">5. Comparison summary</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- 1. Classification -->
+    <section id="classification" class="card" aria-labelledby="classification-title">
+      <div class="card-head">
+        <div class="card-icon">①</div>
+        <h3 id="classification-title" class="card-title">Classification of computers</h3>
+      </div>
+      <div class="card-body">
+        <div class="grid">
+          <div class="col-4">
+            <div class="subcard">
+              <h4>Based on purpose</h4>
+              <ul class="clean">
+                <li><span class="pill">General Purpose Computers</span></li>
+                <li><span class="pill">Special Purpose Computers</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="subcard">
+              <h4>Based on technology used</h4>
+              <ul class="clean">
+                <li><span class="pill">Analog Computers</span></li>
+                <li><span class="pill">Digital Computers</span></li>
+                <li><span class="pill">Hybrid Computers</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="subcard">
+              <h4>Based on size and capacity</h4>
+              <ul class="clean">
+                <li><span class="pill">Supercomputer</span></li>
+                <li><span class="pill">Mainframe Computer</span></li>
+                <li><span class="pill">Minicomputer</span></li>
+                <li><span class="pill">Microcomputer</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Purpose -->
+    <section id="purpose" class="card" aria-labelledby="purpose-title">
+      <div class="card-head">
+        <div class="card-icon">②</div>
+        <h3 id="purpose-title" class="card-title">According to purpose</h3>
+      </div>
+      <div class="card-body grid">
+        <div class="col-6">
+          <div class="subcard">
+            <h4>General Purpose Computers</h4>
+            <p class="tagline">Used for general tasks like sales analysis, financial accounting, invoicing, etc.</p>
+            <ul class="clean">
+              <li><strong>Examples:</strong> Office computers, educational computers</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="subcard">
+            <h4>Special Purpose Computers</h4>
+            <p class="tagline">Designed for specific tasks requiring dedicated computation.</p>
+            <ul class="clean">
+              <li><strong>Applications:</strong> Weather forecasting, space applications, medical diagnostics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Technology -->
+    <section id="technology" class="card" aria-labelledby="technology-title">
+      <div class="card-head">
+        <div class="card-icon">③</div>
+        <h3 id="technology-title" class="card-title">According to technology used</h3>
+      </div>
+      <div class="card-body grid">
+        <div class="col-4">
+          <div class="subcard">
+            <h4>Analog Computers</h4>
+            <p class="tagline">Store data as continuously varying physical quantities (voltage, current).</p>
+            <ul class="clean">
+              <li><strong>Example devices:</strong> Thermometer, Speedometer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="subcard">
+            <h4>Digital Computers</h4>
+            <p class="tagline">Store data in discrete numbers (binary digits).</p>
+            <ul class="clean">
+              <li><strong>Note:</strong> Almost all modern computers are digital</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="subcard">
+            <h4>Hybrid Computers</h4>
+            <p class="tagline">Combine analog and digital technologies.</p>
+            <ul class="clean">
+              <li><strong>Applications:</strong> Artificial Intelligence, Computer‑aided manufacturing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Size & Capacity -->
+    <section id="size-capacity" class="card" aria-labelledby="size-title">
+      <div class="card-head">
+        <div class="card-icon">④</div>
+        <h3 id="size-title" class="card-title">According to size and capacity</h3>
+      </div>
+      <div class="card-body grid">
+        <div class="col-6">
+          <div class="subcard">
+            <h4>Microcomputers</h4>
+            <p class="tagline">Small, low‑cost, single‑user systems.</p>
+            <ul class="clean">
+              <li><strong>Examples:</strong> Desktop PC, Laptop, Smartphone, Tablet</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="subcard">
+            <h4>Minicomputers</h4>
+            <p class="tagline">Multi‑user systems supporting about 4–200 users.</p>
+            <ul class="clean">
+              <li><strong>Use cases:</strong> Industries, research centers</li>
+              <li><strong>Examples:</strong> PDP‑11, IBM 8000 series</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="subcard">
+            <h4>Mainframe Computers</h4>
+            <p class="tagline">High performance with large storage for many users.</p>
+            <ul class="clean">
+              <li><strong>Use cases:</strong> Banks, large organizations, centralized databases</li>
+              <li><strong>Examples:</strong> CDC 6600, IBM ES000 series</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="subcard">
+            <h4>Supercomputers</h4>
+            <p class="tagline">Fastest and most expensive; for highly calculation‑intensive tasks.</p>
+            <ul class="clean">
+              <li><strong>Metric:</strong> Performance measured in FLOPS</li>
+              <li><strong>Examples:</strong> IBM Roadrunner, PARAM Padma (India, 1 TFLOP), AIRAWAT (India, 13,170 TFLOPs), Tainhe‑2 (China), Titan, Frontier (America)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Comparison Table -->
+    <section id="comparison" class="card" aria-labelledby="comparison-title">
+      <div class="card-head">
+        <div class="card-icon">⑤</div>
+        <h3 id="comparison-title" class="card-title">Comparison summary</h3>
+      </div>
+      <div class="card-body">
+        <div class="table-wrap" role="region" aria-label="Comparison table" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Speed</th>
+                <th>Cost</th>
+                <th>Complexity</th>
+                <th>Size</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Microcomputer</td>
+                <td>Slow</td>
+                <td>Cheap</td>
+                <td>Simple</td>
+                <td>Small</td>
+              </tr>
+              <tr>
+                <td>Minicomputer</td>
+                <td>Moderate</td>
+                <td>Moderate</td>
+                <td>Moderate</td>
+                <td>Medium</td>
+              </tr>
+              <tr>
+                <td>Mainframe</td>
+                <td>Fast</td>
+                <td>Expensive</td>
+                <td>Complex</td>
+                <td>Large</td>
+              </tr>
+              <tr>
+                <td>Supercomputer</td>
+                <td>Very Fast</td>
+                <td>Very Expensive</td>
+                <td>Highly Complex</td>
+                <td>Very Large</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note" style="margin-top:10px;">Tip: Use this table for quick revision before tests.</p>
+      </div>
+    </section>
+  </main>
+  <style>
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --card: #0b1220;
+  --text: #e5e7eb;
+  --muted: #93c5fd;
+  --brand: #60a5fa;
+  --accent: #22d3ee;
+  --border: #1f2937;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --radius-xl: 18px;
+  --radius-md: 12px;
+  --maxw: 1100px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0;
+  background: linear-gradient(180deg, #0a0f1e 0%, #0f172a 60%, #0a0f1e 100%);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+header {
+  position: sticky; top: 0; z-index: 50;
+  backdrop-filter: blur(8px);
+  background: rgba(2,6,23,.85);
+  border-bottom: 1px solid var(--border);
+}
+.header-wrap {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 14px 20px; display: flex; align-items: center; gap: 16px;
+}
+.badge {
+  background: linear-gradient(135deg, var(--brand), var(--accent));
+  color: #001018; font-weight: 800;
+  padding: 6px 12px; border-radius: 999px; font-size: 12px;
+}
+h1 { margin: 0; font-size: 20px; font-weight: 800; }
+main { max-width: var(--maxw); margin: 28px auto; padding: 0 20px 40px; }
+.card {
+  margin-top: 24px; background: var(--card);
+  border: 1px solid var(--border); border-radius: var(--radius-xl);
+  box-shadow: var(--shadow); overflow: hidden;
+}
+.card-head {
+  display: flex; align-items: center; gap: 12px;
+  padding: 16px 18px; border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(96,165,250,.12), rgba(34,211,238,.06));
+}
+.card-icon {
+  width: 36px; height: 36px; display: grid; place-items: center;
+  border-radius: 10px; background: rgba(96,165,250,.3);
+  font-weight: bold;
+}
+.card-title { font-size: 18px; font-weight: 800; margin: 0; }
+.card-body { padding: 18px; }
+ul { margin: 0; padding-left: 20px; }
+.table-wrap {
+  overflow-x: auto; border: 1px solid var(--border);
+  border-radius: var(--radius-md); background: #0a101d;
+}
+table { width: 100%; border-collapse: collapse; min-width: 640px; }
+th, td {
+  padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border);
+}
+thead th {
+  background: rgba(34,211,238,.16);
+  color: #e2f1ff; font-weight: 800;
+}
+tbody tr:hover td { background: rgba(96,165,250,.05); }
+</style>
+</head>
+<body>
+<header>
+  <div class="header-wrap">
+    <span class="badge">Lecture 7/8/9</span>
+    <h1>Components of a Digital Computer</h1>
+  </div>
+</header>
+<main>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">1</div><h3 class="card-title">Components of a Digital Computer</h3></div>
+  <div class="card-body">
+    <ul>
+      <li><strong>Characteristics of Computer:</strong>
+        <ol>
+          <li>Responds to a specific set of instructions.</li>
+          <li>Executes pre-recorded instructions (a program).</li>
+        </ol>
+      </li>
+      <li><strong>Hardware:</strong> Physical components (wires, circuits).</li>
+      <li><strong>Software:</strong> Instructions and data.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">2</div><h3 class="card-title">Basic Units of Computer System</h3></div>
+  <div class="card-body">
+    <ul>
+      <li><strong>Central Processing Unit (CPU):</strong>
+        <ul>
+          <li>Executes program instructions.</li>
+          <li>Consists of:
+            <ul>
+              <li><strong>Control Unit (CU):</strong> Directs electronic signals and controls data flow between memory, ALU, and I/O devices.</li>
+              <li><strong>Arithmetic Logic Unit (ALU):</strong> Performs arithmetic (add, subtract, multiply, divide) and logical comparisons.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Storage Unit:</strong>
+        <ul>
+          <li>Holds instructions, data, intermediate, and final results.</li>
+          <li>Memory is organized in bytes (1 byte = 8 bits).</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">3</div><h3 class="card-title">Types of Storage Units</h3></div>
+  <div class="card-body">
+    <ul>
+      <li><strong>Primary Memory:</strong>
+        <ul>
+          <li>Holds running programs and data.</li>
+          <li>Fast, small capacity, volatile, expensive.</li>
+          <li>Types:
+            <ul>
+              <li><strong>RAM (Random Access Memory):</strong>
+                <ul>
+                  <li>Volatile, fast, expensive.</li>
+                  <li>SRAM: Faster, no refresh needed, used as cache memory.</li>
+                  <li>DRAM: Needs refresh, predominant in modern computers.</li>
+                </ul>
+              </li>
+              <li><strong>ROM (Read Only Memory):</strong>
+                <ul>
+                  <li>Non-volatile, stores instructions for bootstrapping.</li>
+                  <li>Types: PROM, EPROM, EEPROM.</li>
+                </ul>
+              </li>
+              <li><strong>CMOS Memory:</strong> Stores system settings like date, time, boot devices.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Secondary Storage:</strong>
+        <ul>
+          <li>Large capacity, slower than primary memory, non-volatile, cheaper.</li>
+          <li>Examples: HDD, CD-ROM, DVD, Pen Drive, Memory Card.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">4</div><h3 class="card-title">Input Unit</h3></div>
+  <div class="card-body">
+    <ul>
+      <li>Reads instructions and data from outside.</li>
+      <li>Converts to computer-acceptable form.</li>
+      <li>Examples: Keyboard, Mouse, Scanner.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">5</div><h3 class="card-title">Output Unit</h3></div>
+  <div class="card-body">
+    <ul>
+      <li>Converts coded results to human-readable form.</li>
+      <li>Examples: Monitor, Printer, Speaker.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">6</div><h3 class="card-title">Memory Measurement Units</h3></div>
+  <div class="card-body">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Unit</th><th>Size</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bit</td><td>1 Bit</td></tr>
+          <tr><td>Byte</td><td>8 Bits</td></tr>
+                    <tr><td>KB (Kilobyte)</td><td>1024 Bytes</td></tr>
+          <tr><td>MB (Megabyte)</td><td>1024 KB</td></tr>
+          <tr><td>GB (Gigabyte)</td><td>1024 MB</td></tr>
+          <tr><td>TB (Terabyte)</td><td>1024 GB</td></tr>
+          <tr><td>PB (Petabyte)</td><td>1024 TB</td></tr>
+          <tr><td>EB (Exabyte)</td><td>1024 PB</td></tr>
+          <tr><td>ZB (Zettabyte)</td><td>1024 EB</td></tr>
+          <tr><td>YB (Yottabyte)</td><td>1024 ZB</td></tr>
+          <tr><td>Brontobyte</td><td>1024 YB</td></tr>
+          <tr><td>Geopbyte</td><td>Largest known memory unit</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">7</div><h3 class="card-title">RAM vs ROM Summary</h3></div>
+  <div class="card-body">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>RAM (Random Access Memory)</th>
+            <th>ROM (Read Only Memory)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Use</td>
+            <td>Temporarily holds data being processed</td>
+            <td>Stores permanent instructions for booting</td>
+          </tr>
+          <tr>
+            <td>Volatility</td>
+            <td>Volatile</td>
+            <td>Non-volatile</td>
+          </tr>
+          <tr>
+            <td>Modification</td>
+            <td>Data can be read/write</td>
+            <td>Data mostly cannot be modified (except PROM/EPROM/EEPROM)</td>
+          </tr>
+          <tr>
+            <td>Capacity</td>
+            <td>64 MB to 4 GB</td>
+            <td>Smaller than RAM</td>
+          </tr>
+          <tr>
+            <td>Cost</td>
+            <td>Expensive</td>
+            <td>Cheaper</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<style>
+    :root{
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #0b1220;
+      --text: #e5e7eb;
+      --muted: #93c5fd;
+      --brand: #60a5fa;
+      --accent: #22d3ee;
+      --border: #1f2937;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius-xl: 18px;
+      --radius-md: 12px;
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      background: linear-gradient(180deg, #0a0f1e 0%, #0f172a 60%, #0a0f1e 100%);
+      color: var(--text); font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(8px);
+      background: linear-gradient(180deg, rgba(2,6,23,.85) 0%, rgba(2,6,23,.35) 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-wrap {
+      max-width: var(--maxw); margin: 0 auto; padding: 14px 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    }
+    .badge {
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      color: #001018; font-weight: 800; letter-spacing: .5px;
+      padding: 6px 12px; border-radius: 999px; font-size: 12px; box-shadow: var(--shadow);
+    }
+    h1.title { margin: 0; font-size: 20px; font-weight: 800; letter-spacing: .3px; }
+    .subtitle { color: #cbd5e1; font-size: 13px; opacity: .9; }
+    main { max-width: var(--maxw); margin: 28px auto; padding: 0 20px 40px; }
+    .intro {
+      background: radial-gradient(1200px 600px at 10% -30%, rgba(96,165,250,.15), transparent 60%),
+                  radial-gradient(900px 500px at 100% 0%, rgba(34,211,238,.12), transparent 60%),
+                  var(--panel);
+      border: 1px solid var(--border);
+      padding: 22px; border-radius: var(--radius-xl); box-shadow: var(--shadow);
+    }
+    .intro h2 { margin: 0 0 8px; font-size: 22px; letter-spacing: .3px; }
+    .intro p { margin: 0; color: #d1d5db; }
+    nav.toc {
+      margin-top: 16px; border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(15,23,42,.9), rgba(2,6,23,.9));
+      border-radius: var(--radius-md); padding: 12px 14px;
+    }
+    nav.toc h3 { margin: 0 0 8px; font-size: 15px; color: #dbeafe; letter-spacing: .2px; }
+    nav.toc ul { margin: 0; padding-left: 16px; }
+    nav.toc li { margin: 6px 0; }
+
+    section.card {
+      margin-top: 24px; background: linear-gradient(180deg, #0b1220 0%, #0d1426 100%);
+      border: 1px solid var(--border); border-radius: var(--radius-xl); box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .card-head {
+      display: flex; align-items: center; gap: 12px;
+      padding: 16px 18px; border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(96,165,250,.12), rgba(34,211,238,.06));
+    }
+    .card-icon {
+      width: 36px; height: 36px; display: grid; place-items: center;
+      border-radius: 10px; background: linear-gradient(135deg, rgba(96,165,250,.3), rgba(34,211,238,.25));
+      color: #061a1f; font-weight: 900;
+    }
+    .card-title { font-size: 18px; font-weight: 800; margin: 0; letter-spacing: .2px; }
+    .card-body { padding: 18px; }
+    ul.clean, ol.clean { margin: 10px 0 0 0; padding-left: 18px; }
+    ul.clean li, ol.clean li { margin: 8px 0; }
+    .grid { display: grid; gap: 14px; grid-template-columns: repeat(12, minmax(0, 1fr)); }
+    .col-12 { grid-column: span 12; }
+    .col-6 { grid-column: span 6; }
+    .subcard {
+      background: linear-gradient(180deg, rgba(17,24,39,.6), rgba(2,6,23,.6));
+      border: 1px solid var(--border); border-radius: 12px; padding: 14px;
+    }
+    .subcard h4 { margin: 0 0 6px; font-size: 16px; font-weight: 800; color: var(--muted); }
+    .tagline { color: #cbd5e1; font-size: 14px; margin: 0 0 10px; }
+    .table-wrap {
+      overflow-x: auto; border: 1px solid var(--border);
+      border-radius: 12px; background: #0a101d;
+    }
+    table { width: 100%; border-collapse: collapse; min-width: 640px; }
+    th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid var(--border); }
+    thead th {
+      background: linear-gradient(180deg, rgba(34,211,238,.16), rgba(96,165,250,.08));
+      color: #e2f1ff; font-weight: 800; letter-spacing: .3px; position: sticky; top: 0; z-index: 1;
+    }
+    tbody tr:hover td { background: rgba(96,165,250,.05); }
+    footer {
+      max-width: var(--maxw); margin: 26px auto 40px; padding: 0 20px;
+      color: #a5b4fc; font-size: 13px; opacity: .9;
+    }
+    @media (max-width: 900px){ .col-6 { grid-column: span 12; } }
+    @media print {
+      header { position: static; background: transparent; border: none; }
+      body { background: #fff; color: #000; }
+      a { color: inherit; text-decoration: none; }
+      .intro, section.card { break-inside: avoid; page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-wrap">
+      <span class="badge">Lecture 10/11</span>
+      <h1 class="title">Problem Solving Concepts</h1>
+      <div class="subtitle">Steps • Design • Coding • Debugging • Documentation • Maintenance</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h2>Overview</h2>
+      <p>This lecture walks through how to move from a problem to a reliable software solution: analysis, design, coding, testing, documentation, and maintenance.</p>
+      <nav class="toc" aria-label="Table of contents">
+        <h3>Contents</h3>
+        <ul>
+          <li><a href="#concept">1. Concept of problem solving</a></li>
+          <li><a href="#steps">2. Steps of problem solving</a></li>
+          <li><a href="#spec">3. Problem definition/specification</a></li>
+          <li><a href="#design">4. Program design</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section id="concept" class="card" aria-labelledby="concept-title">
+      <div class="card-head">
+        <div class="card-icon">①</div>
+        <h3 id="concept-title" class="card-title">Concept of problem solving</h3>
+      </div>
+      <div class="card-body">
+        <p class="tagline">Core steps involved in solving a computer problem:</p>
+        <ol class="clean">
+          <li>Understanding and describing the problem clearly.</li>
+          <li>Designing an algorithm.</li>
+          <li>Developing a computer solution.</li>
+          <li>Testing the solution.</li>
+          <li>Documentation.</li>
+          <li>Maintenance.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="steps" class="card" aria-labelledby="steps-title">
+      <div class="card-head">
+        <div class="card-icon">②</div>
+        <h3 id="steps-title" class="card-title">Steps of problem solving</h3>
+      </div>
+      <div class="card-body grid">
+        <div class="col-6">
+          <div class="subcard">
+            <h4>Program analysis</h4>
+            <ul class="clean">
+              <li><strong>Goal:</strong> Analyze the problem and desired output.</li>
+              <li><strong>Requirements:</strong> Gather and clarify constraints.</li>
+              <li><strong>Scope:</strong> Define what the program should do.</li>
+              <li><strong>Process:</strong> Define processing tasks clearly.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="subcard">
+            <h4>Program design</h4>
+            <p class="tagline">Design the solution without writing code.</p>
+            <ul class="clean">
+              <li><strong>Tools:</strong> Flowchart, Algorithm, Pseudocode.</li>
+              <li><strong>Outcome:</strong> A design that can be translated into code.</li>
+              <li><strong>Validation:</strong> Output must solve the intended problem.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="subcard">
+            <h4>Program coding</h4>
+            <ul class="clean">
+              <li><strong>Action:</strong> Write the actual code using a programming language.</li>
+              <li><strong>Practice:</strong> Follow standards, name clearly, keep modules small.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="subcard">
+            <h4>Program debugging</h4>
+            <ul class="clean">
+              <li><strong>Definition:</strong> Finding and fixing errors (“bugs”).</li>
+              <li><strong>Testing:</strong> Ensure all modules work correctly via thorough tests.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="subcard">
+            <h4>Program documentation</h4>
+            <ul class="clean">
+              <li><strong>Purpose:</strong> Help users and future developers.</li>
+              <li><strong>Includes:</strong> Problem Definition, Design, Test Docs, Development History, User Manual (input, processing, output).</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="subcard">
+            <h4>Program maintenance</h4>
+            <ul class="clean">
+              <li><strong>Corrections:</strong> Detect and eliminate undetected errors.</li>
+              <li><strong>Improvements:</strong> Modify to enhance performance and adaptability.</li>
+              <li><strong>Evolution:</strong> Add new features as needs change.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="spec" class="card" aria-labelledby="spec-title">
+      <div class="card-head">
+        <div class="card-icon">③</div>
+        <h3 id="spec-title" class="card-title">Problem definition/specification</h3>
+      </div>
+      <div class="card-body">
+        <p class="tagline">Precise definitions produce better solutions. Always specify inputs and outputs.</p>
+        <div class="grid">
+          <div class="col-6">
+            <div class="subcard">
+              <h4>Example problem</h4>
+              <ul class="clean">
+                <li><strong>Task:</strong> Compute the average of three numbers.</li>
+                <li><strong>Clarify:</strong> What is “average”? How is it calculated?</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="subcard">
+              <h4>Specification template</h4>
+              <ul class="clean">
+                <li><strong>INPUT:</strong> Three numeric values, say a, b, c.</li>
+                <li><strong>OUTPUT:</strong> Average value (a + b + c) / 3.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="subcard" style="margin-top:14px;">
+          <h4>Sample algorithm (pseudocode)</h4>
+          <ul class="clean">
+            <li><strong>Step 1:</strong> Read a, b, c.</li>
+            <li><strong>Step 2:</strong> avg ← (a + b + c) / 3.</li>
+            <li><strong>Step 3:</strong> Print avg.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="design" class="card" aria-labelledby="design-title">
+      <div class="card-head">
+        <div class="card-icon">④</div>
+        <h3 id="design-title" class="card-title">Program design</h3>
+      </div>
+      <div class="card-body">
+        <p class="tagline">Before coding, follow these steps to model and verify your solution.</p>
+        <ol class="clean">
+          <li><strong>Understand thoroughly:</strong> Restate the problem; list assumptions and constraints.</li>
+          <li><strong>Model the solution:</strong> Use flowcharts, algorithms, and pseudocode to map logic.</li>
+          <li><strong>Create test data:</strong> Cover normal, edge, and error cases to verify correctness later.</li>
+        </ol>
+        <div class="subcard" style="margin-top:14px;">
+          <h4>Tip</h4>
+          <p class="tagline">Keep designs simple and modular. Each module should do one thing well and be easy to test.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #0b1220;
+      --text: #e5e7eb;
+      --muted: #93c5fd;
+      --brand: #60a5fa;
+      --accent: #22d3ee;
+      --border: #1f2937;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius-xl: 18px;
+      --radius-md: 12px;
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      background: linear-gradient(180deg, #0a0f1e 0%, #0f172a 60%, #0a0f1e 100%);
+      color: var(--text); font-family: system-ui, sans-serif; line-height: 1.6;
+    }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(8px);
+      background: rgba(2,6,23,.85);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-wrap {
+      max-width: var(--maxw); margin: 0 auto;
+      padding: 14px 20px; display: flex; align-items: center; gap: 16px;
+    }
+    .badge {
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      color: #001018; font-weight: 800;
+      padding: 6px 12px; border-radius: 999px; font-size: 12px;
+    }
+    h1 { margin: 0; font-size: 20px; font-weight: 800; }
+    main { max-width: var(--maxw); margin: 28px auto; padding: 0 20px 40px; }
+    .card {
+      margin-top: 24px; background: var(--card);
+      border: 1px solid var(--border); border-radius: var(--radius-xl);
+      box-shadow: var(--shadow); overflow: hidden;
+    }
+    .card-head {
+      display: flex; align-items: center; gap: 12px;
+      padding: 16px 18px; border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(96,165,250,.12), rgba(34,211,238,.06));
+    }
+    .card-icon {
+      width: 36px; height: 36px; display: grid; place-items: center;
+      border-radius: 10px; background: rgba(96,165,250,.3);
+      font-weight: bold;
+    }
+    .card-title { font-size: 18px; font-weight: 800; margin: 0; }
+    .card-body { padding: 18px; }
+    ul { margin: 0; padding-left: 20px; }
+    pre {
+      background: #1e293b; color: #e2e8f0;
+      padding: 12px 14px; border-radius: 12px;
+      overflow-x: auto; font-size: 14px;
+    }
+    code { font-family: monospace; }
+    .example-block {
+      margin-top: 12px;
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+    }
+    .example-block strong {
+      color: var(--muted);
+    }
+    footer {
+      max-width: var(--maxw); margin: 26px auto 40px; padding: 0 20px;
+      color: #a5b4fc; font-size: 13px; opacity: .9;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-wrap">
+    <span class="badge">Lecture 12</span>
+    <h1>Debugging and Types of Errors</h1>
+  </div>
+</header>
+<main>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">1</div>
+    <h3 class="card-title">Debugging</h3>
+  </div>
+  <div class="card-body">
+    <p>Debugging is the process of finding and fixing errors or bugs in the source code of any software. When software does not work as expected, programmers study the code to determine why and where the errors occurred.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <div class="card-icon">2</div>
+    <h3 class="card-title">Types of Errors in a Program</h3>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li><strong>Syntax Error</strong>
+        <ul>
+          <li>Syntax refers to the structure and rules of the program.</li>
+          <li>Occurs when the interpreter cannot understand a line of code (e.g., missing parentheses).</li>
+        </ul>
+        <div class="example-block">
+          <strong>Example:</strong>
+          <pre><code>print "Hello World!"</code></pre>
+          <p>Output: Syntax error because parentheses are missing.</p>
+        </div>
+      </li>
+
+      <li><strong>Logical Error</strong>
+        <ul>
+          <li>Produces unpredictable results or incorrect outputs.</li>
+          <li>Hard to detect.</li>
+        </ul>
+        <div class="example-block">
+          <strong>Example:</strong>
+          <pre><code>x = 3
+y = 4
+average = x + y / 2
+print(average)</code></pre>
+          <p>Output: <code>5.0</code> (incorrect; should be <code>(x + y) / 2 = 3.5</code>).</p>
+        </div>
+      </li>
+
+      <li><strong>Runtime Error</strong>
+        <ul>
+          <li>Occurs while the program executes.</li>
+          <li>Python understands the code but cannot perform the action.</li>
+        </ul>
+        <div class="example-block">
+          <strong>Example 1 — Undefined variable:</strong>
+          <pre><code>day = "Sunday"
+print(Day)</code></pre>
+          <p>Output:</p>
+          <pre><code>NameError: name 'Day' is not defined</code></pre>
+        </div>
+
+        <div class="example-block">
+          <strong>Example 2 — Division by zero:</strong>
+          <pre><code>no = 0
+num = 2 / no</code></pre>
+          <p>Output:</p>
+          <pre><code>ZeroDivisionError: integer division or modulo by zero</code></pre>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</main>
+
+
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #0b1220;
+      --text: #e5e7eb;
+      --muted: #93c5fd;
+      --brand: #60a5fa;
+      --accent: #22d3ee;
+      --border: #1f2937;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius-xl: 18px;
+      --radius-md: 12px;
+      --maxw: 1100px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      background: linear-gradient(180deg, #0a0f1e 0%, #0f172a 60%, #0a0f1e 100%);
+      color: var(--text); font-family: system-ui, sans-serif; line-height: 1.6;
+    }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(8px);
+      background: rgba(2,6,23,.85);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-wrap {
+      max-width: var(--maxw); margin: 0 auto;
+      padding: 14px 20px; display: flex; align-items: center; gap: 16px;
+    }
+    .badge {
+      background: linear-gradient(135deg, var(--brand), var(--accent));
+      color: #001018; font-weight: 800;
+      padding: 6px 12px; border-radius: 999px; font-size: 12px;
+    }
+    h1 { margin: 0; font-size: 20px; font-weight: 800; }
+    main { max-width: var(--maxw); margin: 28px auto; padding: 0 20px 40px; }
+    .card {
+      margin-top: 24px; background: var(--card);
+      border: 1px solid var(--border); border-radius: var(--radius-xl);
+      box-shadow: var(--shadow); overflow: hidden;
+    }
+    .card-head {
+      display: flex; align-items: center; gap: 12px;
+      padding: 16px 18px; border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(96,165,250,.12), rgba(34,211,238,.06));
+    }
+    .card-icon {
+      width: 36px; height: 36px; display: grid; place-items: center;
+      border-radius: 10px; background: rgba(96,165,250,.3);
+      font-weight: bold;
+    }
+    .card-title { font-size: 18px; font-weight: 800; margin: 0; }
+    .card-body { padding: 18px; }
+    ul, ol { margin: 0; padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    pre {
+      background: #1e293b; color: #e2e8f0;
+      padding: 12px 14px; border-radius: 12px;
+      overflow-x: auto; font-size: 14px;
+    }
+    code { font-family: monospace; }
+    .subcard {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      margin-top: 12px;
+    }
+    .subcard h4 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      color: var(--muted);
+    }
+    footer {
+      max-width: var(--maxw); margin: 26px auto 40px; padding: 0 20px;
+      color: #a5b4fc; font-size: 13px; opacity: .9;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-wrap">
+    <span class="badge">Lecture 13/14</span>
+    <h1>Techniques of Problem Solving</h1>
+  </div>
+</header>
+<main>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">1️⃣</div><h3 class="card-title">Purpose of Program Planning</h3></div>
+  <div class="card-body">
+    <ul>
+      <li>Correct program likhne ke liye, har instruction ko sahi sequence me likhna jaruri hai.</li>
+      <li>Program planning se ensure hota hai ki instructions:
+        <ul>
+          <li>➔ Problem ke liye appropriate ho</li>
+          <li>➔ Sahi sequence me ho</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">2️⃣</div><h3 class="card-title">Algorithm</h3></div>
+  <div class="card-body">
+    <ul>
+      <li>Step-by-step process to solve any logical and mathematical problem.</li>
+      <li><strong>Definition (Thomas H. Coreman):</strong>
+        ➔ Sequence of computational steps transforming input to desired output.
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">3️⃣</div><h3 class="card-title">Characteristics of Algorithm</h3></div>
+  <div class="card-body">
+    <ul>
+      <li>Input: At least one input.</li>
+      <li>Output: Desired output.</li>
+      <li>Definiteness: Clear intent.</li>
+      <li>Finiteness: Finite steps.</li>
+      <li>Effectiveness: Achieves intended purpose.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">4️⃣</div><h3 class="card-title">Flowchart</h3></div>
+  <div class="card-body">
+    <p>Diagrammatic representation of problem-solving process.</p>
+    <div class="subcard">
+      <h4>Symbols</h4>
+      <ul>
+        <li>Oval → Start/Stop</li>
+        <li>Rectangle → Process</li>
+        <li>Parallelogram → Input/Output</li>
+        <li>Diamond → Decision</li>
+        <li>Arrow → Flow of steps</li>
+      </ul>
+    </div>
+    <div class="subcard">
+      <h4>Levels</h4>
+      <ul>
+        <li>Macro flowchart → Main segments only</li>
+        <li>Micro flowchart → Detailed steps</li>
+      </ul>
+    </div>
+    <div class="subcard">
+      <h4>Rules to Design</h4>
+      <ul>
+        <li>One Start, one Stop</li>
+        <li>Top to bottom, left to right flow</li>
+        <li>Simple, clear words</li>
+        <li>No crossing arrows</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">5️⃣</div><h3 class="card-title">Advantages of Flowchart</h3></div>
+  <div class="card-body">
+    <ul>
+      <li>Better communication</li>
+      <li>Proper documentation</li>
+      <li>Efficient coding</li>
+      <li>Systematic debugging & testing</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">6️⃣</div><h3 class="card-title">Limitations of Flowchart</h3></div>
+  <div class="card-body">
+    <ul>
+      <li>Time-consuming to draw</li>
+      <li>Redrawing for changes is tedious</li>
+      <li>No standard detail level</li>
+    </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">7️⃣</div><h3 class="card-title">Example Algorithms</h3></div>
+  <div class="card-body">
+    <div class="subcard">
+      <h4>Sum of Two Numbers</h4>
+      <ol>
+        <li>Start</li>
+        <li>Input A, B</li>
+                <li>SUM = A + B</li>
+        <li>Display SUM</li>
+        <li>Stop</li>
+      </ol>
+    </div>
+
+    <div class="subcard">
+      <h4>Area and Perimeter of Square</h4>
+      <ol>
+        <li>Start</li>
+        <li>Input side L</li>
+        <li>Area = L × L</li>
+        <li>Perimeter = 4 × L</li>
+        <li>Display Area, Perimeter</li>
+        <li>Stop</li>
+      </ol>
+    </div>
+
+    <div class="subcard">
+      <h4>Cube of a Number</h4>
+      <ol>
+        <li>Start</li>
+        <li>Input number A</li>
+        <li>Cube = A × A × A</li>
+        <li>Display Cube</li>
+        <li>Stop</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-head"><div class="card-icon">8️⃣</div><h3 class="card-title">Pseudocode</h3></div>
+  <div class="card-body">
+    <p>Natural language resembling computer instructions. Easier than flowcharts to modify.</p>
+    <div class="subcard">
+      <h4>Example — Adding Two Numbers</h4>
+      <pre><code>BEGIN
+NUMBER s1, s2, sum
+INPUT s1
+INPUT s2
+sum = s1 + s2
+OUTPUT sum
+END</code></pre>
+    </div>
+  </div>
+</div>
+</main>
+
+
+  <footer>
+    © Problem solving using computer :
+  </footer>
+
+</body>
+</html>
